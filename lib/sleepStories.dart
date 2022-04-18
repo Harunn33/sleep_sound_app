@@ -52,7 +52,7 @@ class _MainPage2State extends State<MainPage2> {
                   Padding(
                     padding: EdgeInsets.only(bottom: 20),
                     child: Text(
-                      "Sleep Stories",
+                      "Sleep Storiess",
                       style: TextStyle(
                           fontSize: 45,
                           fontWeight: FontWeight.bold,
