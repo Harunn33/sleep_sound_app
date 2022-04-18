@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
               child: Container(
                 child: Center(
                   child: Text(
-                    "Facebook İle Giriş Yapıver",
+                    "Facebook İle Giriş Yap",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
