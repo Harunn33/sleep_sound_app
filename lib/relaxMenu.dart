@@ -40,7 +40,6 @@ class RelaxMenu extends StatelessWidget {
         ListView(
           padding: EdgeInsets.only(bottom: 50),
           children: [
-            ArrowBackBtn(),
             Container(
               height: 250,
               decoration: BoxDecoration(
