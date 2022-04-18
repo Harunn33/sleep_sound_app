@@ -54,7 +54,7 @@ class RelaxMenu extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 60),
                     child: Text(
-                      "Relax",
+                      "Relaxxx",
                       style: TextStyle(
                         fontSize: 80,
                         fontWeight: FontWeight.bold,
