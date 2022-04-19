@@ -19,6 +19,9 @@ class MusicItemsPage extends StatefulWidget {
 }
 
 class _MusicItemsPageState extends State<MusicItemsPage> {
+  IconData favorite = Icons.favorite_border_rounded;
+  IconData playPause = Icons.play_circle_rounded;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -115,8 +118,16 @@ class _MusicItemsPageState extends State<MusicItemsPage> {
                           color: Colors.white.withOpacity(.7),
                         ),
                         IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.play_circle_rounded),
+                          onPressed: () {
+                            setState(() {
+                              if (playPause == Icons.play_circle_rounded) {
+                                playPause = Icons.pause_circle_rounded;
+                              } else {
+                                playPause = Icons.play_circle_rounded;
+                              }
+                            });
+                          },
+                          icon: Icon(playPause),
                           iconSize: 100,
                           color: Colors.white,
                         ),
@@ -127,8 +138,16 @@ class _MusicItemsPageState extends State<MusicItemsPage> {
                           color: Colors.white.withOpacity(.7),
                         ),
                         IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.favorite_border_rounded),
+                          onPressed: () {
+                            setState(() {
+                              if (favorite == Icons.favorite_border_rounded) {
+                                favorite = Icons.favorite;
+                              } else {
+                                favorite = Icons.favorite_border_rounded;
+                              }
+                            });
+                          },
+                          icon: Icon(favorite),
                           iconSize: 40,
                           color: Colors.white,
                         )
