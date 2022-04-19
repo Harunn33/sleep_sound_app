@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 import 'package:sleep_soundss/components/MusicItemsPage.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainPage2 extends StatefulWidget {
+class MainPage2 extends StatefulWidget implements BaseClass {
   const MainPage2({Key? key}) : super(key: key);
 
   @override
