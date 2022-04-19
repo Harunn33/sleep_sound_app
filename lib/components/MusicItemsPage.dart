@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
+import 'package:sleep_soundss/sleepStories.dart';
 
 class MusicItemsPage extends StatefulWidget {
   String imageUrl;
@@ -107,8 +107,8 @@ class _MusicItemsPageState extends State<MusicItemsPage> {
                       children: [
                         IconButton(
                           onPressed: () {},
-                          icon: FaIcon(FontAwesomeIcons.upRightFromSquare),
-                          iconSize: 30,
+                          icon: Icon(Icons.ios_share_sharp),
+                          iconSize: 40,
                           color: Colors.white,
                         ),
                         IconButton(

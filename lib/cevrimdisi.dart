@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/classDraweMenu/navigatorManager.dart';
 
 import 'package:sleep_soundss/main.dart';
@@ -10,6 +9,7 @@ import 'package:sleep_soundss/rate.dart';
 import 'package:sleep_soundss/relaxMenu.dart';
 import 'package:sleep_soundss/share.dart';
 import 'package:sleep_soundss/sleepStories.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -31,11 +31,13 @@ class CevrimDisi extends StatelessWidget {
 
   CevrimDisi({required this.active});
 
+ 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: CevrimiciGirisEkraniBody(volume: Icons.volume_up),
+        body: CevrimiciGirisEkraniBody(),
         drawer: menuDrawer(),
       ),
     );
@@ -43,140 +45,142 @@ class CevrimDisi extends StatelessWidget {
 
   Widget menuDrawer() {
     return Drawer(
-      backgroundColor: Color.fromARGB(255, 4, 32, 55),
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/river.jpg"),
-                fit: BoxFit.cover,
+        backgroundColor: Color.fromARGB(255, 4, 32, 55),
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+
+                image: DecorationImage(
+                  image: AssetImage("assets/images/river.jpg"),
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
-            child: Align(
-              alignment: Alignment.bottomLeft,
-              child: Row(
-                children: [
-                  Stack(
-                    alignment: AlignmentDirectional.bottomStart,
-                    children: [
-                      Container(
-                        width: 70,
-                        height: 70,
-                        decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(35)),
-                        child: Center(
-                            child: Text(
-                          "J",
-                          style: TextStyle(fontSize: 45, color: Colors.white),
-                        )),
-                      ),
-                      Container(
-                          width: 30,
-                          height: 30,
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Row(
+                  children: [
+                    Stack(
+                      alignment: AlignmentDirectional.bottomStart,
+                      children: [
+                        Container(
+                          width: 70,
+                          height: 70,
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: Colors.green,
                               borderRadius: BorderRadius.circular(35)),
                           child: Center(
-                              child: IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.phone_enabled,
-                                    size: 15,
-                                  )))),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "RELAX & SLEEP SOUNDS",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
-                  )
-                ],
+                              child: Text(
+                            "J",
+                            style:
+                                TextStyle(fontSize: 45, color: Colors.white),
+                          )),
+                        ),
+                        Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(35)),
+                            child: Center(
+                                child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.phone_enabled,
+                                      size: 15,
+                                    )))),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "RELAX & SLEEP SOUNDS",
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                    )
+                  ],
+                ),
               ),
             ),
-          ),
-          Column(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                    border: Border.all(color: Color.fromARGB(255, 21, 54, 80))),
-                height: 280,
-                // color: Colors.purple,
-                width: double.infinity,
-                child: ListView(
-                  padding: EdgeInsets.only(top: 0),
-                  children: [
-                    NavigaterManager(
-                        iconName: "Relax",
-                        fileName: "assets/images/relax.png",
-                        file: RelaxMenu()),
-                    NavigaterManager(
-                      iconName: "Meditations",
-                      fileName: "assets/images/yoga.png",
-                      file: MeditationsPage(),
-                    ),
-                    NavigaterManager(
-                      iconName: "Sleep Stories",
-                      fileName: "assets/images/sleep.png",
-                      file: MainPage2(),
-                    ),
-                    NavigaterManager(
-                      iconName: "Change Language",
-                      fileName: "assets/images/otherLanguage.png",
-                      file: MainPage(),
-                    ),
-                    NavigaterManager(
-                      iconName: "Premium",
-                      fileName: "assets/images/premium.png",
-                      file: PremiumPage(),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Color.fromARGB(255, 21, 54, 80)),
-                ),
-                height: 280,
-                width: double.infinity,
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Align(
-                          child: Text(
-                            "Other",
-                            style: TextStyle(color: Colors.grey, fontSize: 15),
+            Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      border:
+                          Border.all(color: Color.fromARGB(255, 21, 54, 80))),
+                  height: 280,
+                  // color: Colors.purple,
+                  width: double.infinity,
+                  child: ListView(
+                    padding: EdgeInsets.only(top: 0),
+                    children: [
+                      NavigaterManager(iconName: "Relax",
+                          fileName: "assets/images/relax.png",
+                          file: RelaxMenu()),
+                      
+                      NavigaterManager(iconName: "Meditations",
+                          fileName: "assets/images/yoga.png",
+                          file: MeditationsPage(),
                           ),
-                          alignment: Alignment.topLeft),
-                    ),
-                    NavigaterManager(
-                      iconName: "Share",
-                      fileName: "assets/images/share.png",
-                      file: SharePage(),
-                    ),
-                    NavigaterManager(
-                      iconName: "Rate",
-                      fileName: "assets/images/rate.png",
-                      file: RatePAge(),
-                    ),
-                    NavigaterManager(
-                      iconName: "Privacy & Policy",
-                      fileName: "assets/images/privacy.png",
-                      file: PrivacyPage(),
-                    ),
-                  ],
+
+
+                      NavigaterManager(iconName: "Sleep Stories",
+                          fileName: "assets/images/sleep.png",
+                          file:MainPage2() ,
+                          ),
+
+                      NavigaterManager(iconName: "Change Language",
+                          fileName: "assets/images/otherLanguage.png",
+                          file:MainPage() ,
+                          ),
+                      NavigaterManager(iconName: "Premium",
+                          fileName: "assets/images/premium.png",
+                          file:PremiumPage() ,
+                          ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
+                Container(
+                  decoration: BoxDecoration(
+                    border:
+                        Border.all(color: Color.fromARGB(255, 21, 54, 80)),
+                  ),
+                  height: 280,
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Align(
+                            child: Text(
+                              "Other",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                            ),
+                            alignment: Alignment.topLeft),
+                      ),
+                      NavigaterManager(iconName: "Share",
+                          fileName: "assets/images/share.png",
+                          file: SharePage(),
+                          ),
+                          
+                      NavigaterManager(iconName: "Rate",
+                          fileName: "assets/images/rate.png",
+                          file: RatePAge(),
+                          ),
+                      NavigaterManager(iconName: "Privacy & Policy",
+                          fileName: "assets/images/privacy.png",
+                          file: PrivacyPage(),
+                          ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      );
   }
 
   Padding driweMenu({required String iconName, required String fileName}) {
@@ -193,7 +197,9 @@ class CevrimDisi extends StatelessWidget {
             width: 25,
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+             
+            },
             child: Text(
               iconName,
               style: TextStyle(fontSize: 16, color: Colors.grey),
@@ -205,19 +211,10 @@ class CevrimDisi extends StatelessWidget {
   }
 }
 
-class CevrimiciGirisEkraniBody extends StatefulWidget {
-  CevrimiciGirisEkraniBody({
+class CevrimiciGirisEkraniBody extends StatelessWidget {
+  const CevrimiciGirisEkraniBody({
     Key? key,
-    required IconData volume,
   }) : super(key: key);
-
-  @override
-  State<CevrimiciGirisEkraniBody> createState() =>
-      _CevrimiciGirisEkraniBodyState();
-}
-
-class _CevrimiciGirisEkraniBodyState extends State<CevrimiciGirisEkraniBody> {
-  IconData volume = Icons.volume_up;
 
   @override
   Widget build(BuildContext context) {
@@ -257,6 +254,8 @@ class _CevrimiciGirisEkraniBodyState extends State<CevrimiciGirisEkraniBody> {
                     child: IconButton(
                         onPressed: () {
                           Scaffold.of(context).openDrawer();
+                        
+
                         },
                         icon: ImageIcon(AssetImage("assets/images/tune.png"),
                             size: 35, color: Color.fromARGB(255, 162, 7, 189))),
@@ -279,10 +278,10 @@ class _CevrimiciGirisEkraniBodyState extends State<CevrimiciGirisEkraniBody> {
                     ),
                     child: IconButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: ((context) => RelaxMenu())));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: ((context) => RelaxMenu())
+
+                          ));
                         },
                         icon: ImageIcon(AssetImage("assets/images/relax.png"),
                             size: 35, color: Color.fromARGB(255, 162, 7, 189))),
@@ -305,10 +304,7 @@ class _CevrimiciGirisEkraniBodyState extends State<CevrimiciGirisEkraniBody> {
                     ),
                     child: IconButton(
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return MeditationsPage();
-                          }));
+                          Navigator.push(context, MaterialPageRoute(builder: (context){return MeditationsPage();}));
                         },
                         icon: ImageIcon(AssetImage("assets/images/yoga.png"),
                             size: 35, color: Color.fromARGB(255, 162, 7, 189))),
@@ -356,21 +352,9 @@ class _CevrimiciGirisEkraniBodyState extends State<CevrimiciGirisEkraniBody> {
                       color: Colors.black,
                     ),
                     child: IconButton(
-                      onPressed: () {
-                        setState(() {
-                          if (volume == Icons.volume_up) {
-                            volume = Icons.volume_off;
-                          } else {
-                            volume = Icons.volume_up;
-                          }
-                        });
-                      },
-                      icon: Icon(
-                        volume,
-                      ),
-                      iconSize: 35,
-                      color: Color.fromARGB(255, 162, 7, 189),
-                    ),
+                        onPressed: () {},
+                        icon: ImageIcon(AssetImage("assets/images/volume.png"),
+                            size: 35, color: Color.fromARGB(255, 162, 7, 189))),
                   ),
                   SizedBox(
                     height: 5,
