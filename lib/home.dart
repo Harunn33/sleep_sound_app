@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
+import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/cevrimdisi.dart';
 import 'package:sleep_soundss/main.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatelessWidget implements BaseClass {
   const MyHomePage({Key? key}) : super(key: key);
 
   @override

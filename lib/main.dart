@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/home.dart';
 import 'package:sleep_soundss/sleepStories.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainPage extends StatelessWidget {
+class MainPage extends StatelessWidget implements BaseClass  {
   const MainPage({Key? key}) : super(key: key);
 
   @override

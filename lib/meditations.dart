@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 import 'package:sleep_soundss/freePage.dart';
 import 'package:sleep_soundss/meditationItems.dart';
 
-class MeditationsPage extends StatefulWidget {
+class MeditationsPage extends StatefulWidget implements BaseClass {
   const MeditationsPage({Key? key}) : super(key: key);
 
   @override
