@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 import 'package:sleep_soundss/freePage.dart';
 import 'package:sleep_soundss/meditationItems.dart';
-import 'package:sleep_soundss/meditationItems2.dart';
 
 class MeditationsPage extends StatefulWidget implements BaseClass {
   const MeditationsPage({Key? key}) : super(key: key);
@@ -59,30 +57,12 @@ class _MeditationsPageState extends State<MeditationsPage> {
                     imageUrl: "assets/images/sleep_baby.jpg",
                     text: "Baby Sleep Music",
                     context: context,
-                    widget: MeditationsItemsPage(
-                      imageUrl1: "assets/images/sleep_baby_2.jpg",
-                      imageUrl2: "assets/images/sleep_baby_3.jpg",
-                      imageUrl3: "assets/images/sleep_baby_4.jpg",
-                      imageUrl4: "assets/images/sleep_baby_6.jpg",
-                      imageUrl5: "assets/images/sleep_baby_5.jpg",
-                      imageUrl6: "assets/images/sleep_baby_7.jpg",
-                      imageUrl7: "assets/images/sleep_baby_8.jpg",
-                      imageUrl8: "assets/images/sleep_baby_9.jpg",
-                      text1: "Sleeping Baby",
-                      text2: "Baby Sleeping Music",
-                      text3: "Hush Baby Music",
-                      text4: "Lullaby Baby",
-                      text5: "Little Baby Sleep",
-                      text6: "Magical Baby Music",
-                      text7: "Classical Baby Music",
-                      text8: "Sleepy Music Baby",
-                      sliderIcon: FontAwesomeIcons.sliders,
-                    )),
+                    widget: MeditationsItemsPage()),
                 MeditationContainer(
                     imageUrl: "assets/images/brain.jpg",
                     text: "Brain Wave Meditation",
                     context: context,
-                    widget: MeditationItems2()),
+                    widget: FreePage()),
                 MeditationContainer(
                     imageUrl: "assets/images/rosary.jpg",
                     text: "Chants",
