@@ -5,6 +5,6 @@ class FreePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Daha yapılmadı");
+    return Text("Sayfa yapılacak");
   }
 }
