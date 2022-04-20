@@ -1,46 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
 import 'package:sleep_soundss/components/MusicItemsPage2.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 
 class MeditationsItemsPage extends StatefulWidget {
-  String imageUrl1;
-  String imageUrl2;
-  String imageUrl3;
-  String imageUrl4;
-  String imageUrl5;
-  String imageUrl6;
-  String imageUrl7;
-  String imageUrl8;
-  String text1;
-  String text2;
-  String text3;
-  String text4;
-  String text5;
-  String text6;
-  String text7;
-  String text8;
-  IconData sliderIcon;
-
   MeditationsItemsPage({
     Key? key,
-    required this.imageUrl1,
-    required this.imageUrl2,
-    required this.imageUrl3,
-    required this.imageUrl4,
-    required this.imageUrl5,
-    required this.imageUrl6,
-    required this.imageUrl7,
-    required this.imageUrl8,
-    required this.text1,
-    required this.text2,
-    required this.text3,
-    required this.text4,
-    required this.text5,
-    required this.text6,
-    required this.text7,
-    required this.text8,
-    required this.sliderIcon,
   }) : super(key: key);
 
   @override
@@ -86,7 +52,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                 alignment: Alignment.topRight,
                 child: new DropdownButton<String>(
                     icon: FaIcon(
-                      widget.sliderIcon,
+                      FontAwesomeIcons.sliders,
                       color: Colors.white,
                     ),
                     underline: SizedBox(),
@@ -113,70 +79,86 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               children: [
-                MeditationItems(
-                    imageUrl: widget.imageUrl1,
-                    text: widget.text1,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl1,
-                        text: widget.text1,
-                        time: "3 Min 6 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl2,
-                    text: widget.text2,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl2,
-                        text: widget.text2,
-                        time: "3 Min 23 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl3,
-                    text: widget.text3,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl3,
-                        text: widget.text3,
-                        time: "2 Min 33 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl4,
-                    text: widget.text4,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl4,
-                        text: widget.text4,
-                        time: "5 Min 3 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl5,
-                    text: widget.text5,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl5,
-                        text: widget.text5,
-                        time: "4 Min 58 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl6,
-                    text: widget.text6,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl6,
-                        text: widget.text6,
-                        time: "6 Min 0 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl7,
-                    text: widget.text7,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl7,
-                        text: widget.text7,
-                        time: "5 Min 40 Sec")),
-                MeditationItems(
-                    imageUrl: widget.imageUrl8,
-                    text: widget.text8,
-                    context: context,
-                    widget: MusicItemsPage2(
-                        imageUrl: widget.imageUrl8,
-                        text: widget.text8,
-                        time: "10 Min 15 Sec"))
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_2.jpg",
+                  medimageText: "Sleeping Baby",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_2.jpg",
+                    text: "Sleeping Baby",
+                    time: "3 Min 6 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_3.jpg",
+                  medimageText: "Baby Sleeping Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_3.jpg",
+                    text: "Baby Sleeping Music",
+                    time: "3 Min 23 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_4.jpg",
+                  medimageText: "Hush Baby Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_4.jpg",
+                    text: "Hush Baby Music",
+                    time: "2 Min 33 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_5.jpg",
+                  medimageText: "Lullaby Baby",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_5.jpg",
+                    text: "Lullaby Baby",
+                    time: "5 Min 3 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_6.jpg",
+                  medimageText: "Little Baby Sleep",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_6.jpg",
+                    text: "Little Baby Sleep",
+                    time: "4 Min 58 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_7.jpg",
+                  medimageText: "Magical Baby Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_7.jpg",
+                    text: "Magical Baby Music",
+                    time: "6 Min 0 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_8.jpg",
+                  medimageText: "Classical Baby Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_8.jpg",
+                    text: "Classical Baby Music",
+                    time: "5 Min 40 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/sleep_baby_9.jpg",
+                  medimageText: "Sleepy Music Baby",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/sleep_baby_9.jpg",
+                    text: "Sleepy Music Baby",
+                    time: "10 Min 15 Sec",
+                  ),
+                ),
               ],
             )
           ],
@@ -184,42 +166,4 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
       ]),
     );
   }
-}
-
-Widget MeditationItems(
-    {required String imageUrl,
-    required String text,
-    required BuildContext context,
-    required Widget widget}) {
-  return GestureDetector(
-    onTap: () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return widget;
-      }));
-    },
-    child: Column(
-      children: [
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(imageUrl), fit: BoxFit.cover),
-              borderRadius: BorderRadius.circular(13)),
-          width: 200,
-          height: 130,
-        ),
-        SizedBox(
-          height: 6,
-        ),
-        Text(
-          text,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        )
-      ],
-    ),
-  );
 }
