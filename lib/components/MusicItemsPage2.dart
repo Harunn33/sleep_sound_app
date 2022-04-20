@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 
-class MusicItemsPage extends StatefulWidget {
+class MusicItemsPage2 extends StatefulWidget {
   String imageUrl;
   String text;
   String time;
 
-  MusicItemsPage({
+  MusicItemsPage2({
     Key? key,
     required this.imageUrl,
     required this.text,
@@ -15,10 +15,10 @@ class MusicItemsPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<MusicItemsPage> createState() => _MusicItemsPageState();
+  State<MusicItemsPage2> createState() => _MusicItemsPage2State();
 }
 
-class _MusicItemsPageState extends State<MusicItemsPage> {
+class _MusicItemsPage2State extends State<MusicItemsPage2> {
   IconData favorite = Icons.favorite_border_rounded;
   IconData playPause = Icons.play_circle_rounded;
 
@@ -102,55 +102,48 @@ class _MusicItemsPageState extends State<MusicItemsPage> {
                   ),
                   Padding(
                     padding: EdgeInsets.only(bottom: 120),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    child: Column(
                       children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.first_page_rounded),
+                              iconSize: 50,
+                              color: Colors.white.withOpacity(.7),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  if (playPause == Icons.play_circle_rounded) {
+                                    playPause = Icons.pause_circle_rounded;
+                                  } else {
+                                    playPause = Icons.play_circle_rounded;
+                                  }
+                                });
+                              },
+                              icon: Icon(playPause),
+                              iconSize: 100,
+                              color: Colors.white,
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.last_page_rounded),
+                              iconSize: 50,
+                              color: Colors.white.withOpacity(.7),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
                         IconButton(
                           onPressed: () {},
                           icon: FaIcon(FontAwesomeIcons.upRightFromSquare),
-                          iconSize: 30,
+                          iconSize: 35,
                           color: Colors.white,
                         ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.first_page_rounded),
-                          iconSize: 50,
-                          color: Colors.white.withOpacity(.7),
-                        ),
-                        IconButton(
-                          onPressed: () {
-                            setState(() {
-                              if (playPause == Icons.play_circle_rounded) {
-                                playPause = Icons.pause_circle_rounded;
-                              } else {
-                                playPause = Icons.play_circle_rounded;
-                              }
-                            });
-                          },
-                          icon: Icon(playPause),
-                          iconSize: 100,
-                          color: Colors.white,
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.last_page_rounded),
-                          iconSize: 50,
-                          color: Colors.white.withOpacity(.7),
-                        ),
-                        IconButton(
-                          onPressed: () {
-                            setState(() {
-                              if (favorite == Icons.favorite_border_rounded) {
-                                favorite = Icons.favorite;
-                              } else {
-                                favorite = Icons.favorite_border_rounded;
-                              }
-                            });
-                          },
-                          icon: Icon(favorite),
-                          iconSize: 40,
-                          color: Colors.white,
-                        )
                       ],
                     ),
                   ),
