@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
+import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
 
 class MusicItemsPage2 extends StatefulWidget {
   String imageUrl;

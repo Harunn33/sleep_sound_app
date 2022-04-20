@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
+import 'package:sleep_soundss/components/MusicItemsPage2.dart';
 
+import 'components/arrowBackBtn.dart';
 import 'meditationItems.dart';
 
 class MeditationItems2 extends StatefulWidget {
@@ -13,45 +16,154 @@ class MeditationItems2 extends StatefulWidget {
 class _MeditationItems2State extends State<MeditationItems2> {
   @override
   Widget build(BuildContext context) {
-    return MeditationsItemsPage(
-      sliderIcon: FontAwesomeIcons.sliders,
-      imageUrl1: "assets/images/brain1.jpg",
-      imageUrl2: "assets/images/brain2.jpg",
-      imageUrl3: "assets/images/brain3.jpg",
-      imageUrl4: "assets/images/brain4.jpg",
-      imageUrl5: "assets/images/brain5.jpg",
-      imageUrl6: "assets/images/brain6.jpg",
-      imageUrl7: "assets/images/brain7.jpg",
-      imageUrl8: "assets/images/brain8.jpg",
-      text1: "Alpha Brain Waves",
-      text2: "Brain Wave Alpha",
-      text3: "Meditation in Alpha Waves",
-      text4: "Brain Wave Meditation",
-      text5: "Alpha Wave Meditation",
-      text6: "Brain Wave Beta Music",
-      text7: "Beta Brain Wave Music",
-      text8: "Binaural Beta Waves",
+    return Scaffold(
+      backgroundColor: Colors.purple.shade900,
+      body: Stack(children: [
+        ListView(
+          children: [
+            Container(
+              height: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/meditation.jpg"),
+                    fit: BoxFit.cover),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ArrowBackBtn(),
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 90),
+                    child: Text(
+                      "Meditation",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 45,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "SquarePeg"),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 15),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: new DropdownButton<String>(
+                    icon: FaIcon(
+                      FontAwesomeIcons.sliders,
+                      color: Colors.white,
+                    ),
+                    underline: SizedBox(),
+                    items: <String>[
+                      'None',
+                      'Alpha',
+                      'Beta',
+                      'Gamma',
+                      'Delta',
+                      'Theta'
+                    ].map((String value) {
+                      return new DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      );
+                    }).toList(),
+                    onChanged: (_) {}),
+              ),
+            ),
+            GridView.count(
+              crossAxisCount: 2,
+              padding: EdgeInsets.only(left: 10, right: 10, top: 10),
+              crossAxisSpacing: 10,
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              children: [
+                MeditationManager(
+                  medimageUrl: "assets/images/brain1.jpg",
+                  medimageText: "Alpha Brain Waves",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain1.jpg",
+                    text: "Alpha Brain Waves",
+                    time: "3 Min 6 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain2.jpg",
+                  medimageText: "Brain Wave Alpha",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain2.jpg",
+                    text: "Brain Wave Alpha",
+                    time: "3 Min 23 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain3.jpg",
+                  medimageText: "Meditation in Alpha Waves",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain3.jpg",
+                    text: "Meditation in Alpha Waves",
+                    time: "2 Min 33 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain4.jpg",
+                  medimageText: "Brain Wave Meditation",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain4.jpg",
+                    text: "Brain Wave Meditation",
+                    time: "5 Min 3 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain5.jpg",
+                  medimageText: "Alpha Wave Meditation",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain5.jpg",
+                    text: "Alpha Wave Meditation",
+                    time: "4 Min 58 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain6.jpg",
+                  medimageText: "Brain Wave Beta Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain6.jpg",
+                    text: "Brain Wave Beta Music",
+                    time: "6 Min 0 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain7.jpg",
+                  medimageText: "Brain Wave Beta Music",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain7.jpg",
+                    text: "Beta Brain Wave Music",
+                    time: "5 Min 40 Sec",
+                  ),
+                ),
+                MeditationManager(
+                  medimageUrl: "assets/images/brain8.jpg",
+                  medimageText: "Binaural Beta Waves",
+                  context: context,
+                  managerWidget: MusicItemsPage2(
+                    imageUrl: "assets/images/brain8.jpg",
+                    text: "Binaural Beta Waves",
+                    time: "10 Min 15 Sec",
+                  ),
+                ),
+              ],
+            )
+          ],
+        )
+      ]),
     );
-  }
-}
-
-class SliderIcon extends StatelessWidget {
-  const SliderIcon({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return new DropdownButton<String>(
-        icon: FaIcon(
-          FontAwesomeIcons.clock,
-          color: Colors.white,
-        ),
-        underline: SizedBox(),
-        items: <String>['Duration None', 'DESC', 'ASC'].map((String value) {
-          return new DropdownMenuItem<String>(
-            value: value,
-            child: Text(value),
-          );
-        }).toList(),
-        onChanged: (_) {});
   }
 }
