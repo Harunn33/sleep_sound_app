@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/baseClass.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 import 'package:sleep_soundss/components/MusicItemsPage.dart';
+import 'package:sleep_soundss/pageHeader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,85 +40,63 @@ class _MainPage2State extends State<MainPage2> {
       body: Stack(
         children: [
           ListView(children: [
-            Container(
-              height: 250,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/river.jpg"),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ArrowBackBtn(),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 20),
-                    child: Text(
-                      "Sleep Stories",
-                      style: TextStyle(
-                          fontSize: 45,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontFamily: "SquarePeg"),
+            PageHeader(
+                headerImageUrl: "assets/images/river.jpg",
+                text: "Sleep Stories"),
+            Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.only(topLeft: Radius.circular(6)),
+                        color: Color(0xFF1a2946),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Stories",
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ),
                     ),
                   ),
-                  Row(
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: InkWell(
-                          onTap: () {},
-                          child: Container(
-                            height: 50,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(6)),
-                              color: Color(0xFF1a2946),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Stories",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
+                ),
+                Container(
+                  width: 2,
+                  height: 50,
+                  color: Colors.black.withOpacity(.7),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.only(topRight: Radius.circular(6)),
+                        color: Color(0xFF1a2946),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Favorites",
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white),
                         ),
                       ),
-                      Container(
-                        width: 2,
-                        height: 50,
-                        color: Colors.black.withOpacity(.7),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: InkWell(
-                          onTap: () {},
-                          child: Container(
-                            height: 50,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(6)),
-                              color: Color(0xFF1a2946),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Favorites",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               padding: EdgeInsets.only(right: 20),

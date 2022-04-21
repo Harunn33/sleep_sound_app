@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
 import 'package:sleep_soundss/components/MusicItemsPage2.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
+import 'package:sleep_soundss/pageHeader.dart';
 
 class MeditationsItemsPage extends StatefulWidget {
   MeditationsItemsPage({
@@ -21,57 +22,9 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
       body: Stack(children: [
         ListView(
           children: [
-            Container(
-              height: 300,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/meditation.jpg"),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ArrowBackBtn(),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 90),
-                    child: Text(
-                      "Meditation",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "SquarePeg"),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 15),
-              child: Align(
-                alignment: Alignment.topRight,
-                child: new DropdownButton<String>(
-                    icon: FaIcon(
-                      FontAwesomeIcons.sliders,
-                      color: Colors.white,
-                    ),
-                    underline: SizedBox(),
-                    items: <String>[
-                      'None',
-                      'Alpha',
-                      'Beta',
-                      'Gamma',
-                      'Delta',
-                      'Theta'
-                    ].map((String value) {
-                      return new DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    }).toList(),
-                    onChanged: (_) {}),
-              ),
-            ),
+            PageHeader(
+                headerImageUrl: "assets/images/meditation.jpg",
+                text: "Meditation"),
             GridView.count(
               crossAxisCount: 2,
               padding: EdgeInsets.only(left: 10, right: 10, top: 10),

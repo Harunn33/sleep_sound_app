@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
 import 'package:sleep_soundss/components/MusicItemsPage2.dart';
+import 'package:sleep_soundss/pageHeader.dart';
 
 import 'components/arrowBackBtn.dart';
 import 'meditationItems.dart';
@@ -21,31 +22,9 @@ class _MeditationItems2State extends State<MeditationItems2> {
       body: Stack(children: [
         ListView(
           children: [
-            Container(
-              height: 300,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/meditation.jpg"),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ArrowBackBtn(),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 90),
-                    child: Text(
-                      "Meditation",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "SquarePeg"),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            PageHeader(
+                headerImageUrl: "assets/images/meditation.jpg",
+                text: "Meditation"),
             Padding(
               padding: EdgeInsets.only(right: 15),
               child: Align(
