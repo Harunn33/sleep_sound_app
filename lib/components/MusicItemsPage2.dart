@@ -89,16 +89,6 @@ class _MusicItemsPage2State extends State<MusicItemsPage2> {
                     ),
                   ),
                   SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    widget.text,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white.withOpacity(.8),
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
                     height: 100,
                   ),
                   Padding(
@@ -112,7 +102,7 @@ class _MusicItemsPage2State extends State<MusicItemsPage2> {
                               onPressed: () {},
                               icon: Icon(Icons.first_page_rounded),
                               iconSize: 50,
-                              color: Colors.white.withOpacity(.7),
+                              color: Colors.grey.shade800,
                             ),
                             IconButton(
                               onPressed: () {
@@ -126,13 +116,13 @@ class _MusicItemsPage2State extends State<MusicItemsPage2> {
                               },
                               icon: Icon(playPause),
                               iconSize: 100,
-                              color: Colors.white,
+                              color: Colors.grey.shade800,
                             ),
                             IconButton(
                               onPressed: () {},
                               icon: Icon(Icons.last_page_rounded),
                               iconSize: 50,
-                              color: Colors.white.withOpacity(.7),
+                              color: Colors.grey.shade800,
                             ),
                           ],
                         ),
@@ -143,7 +133,7 @@ class _MusicItemsPage2State extends State<MusicItemsPage2> {
                           onPressed: () {},
                           icon: FaIcon(FontAwesomeIcons.upRightFromSquare),
                           iconSize: 35,
-                          color: Colors.white,
+                          color: Colors.grey.shade800,
                         ),
                       ],
                     ),

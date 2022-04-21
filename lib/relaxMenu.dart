@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sleep_soundss/baseClass.dart';
 
-
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
+import 'package:sleep_soundss/pageHeader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class RelaxMenu extends StatelessWidget implements BaseClass{
+class RelaxMenu extends StatelessWidget implements BaseClass {
   const RelaxMenu({Key? key}) : super(key: key);
 
   @override
@@ -41,86 +41,62 @@ class RelaxMenu extends StatelessWidget implements BaseClass{
         ListView(
           padding: EdgeInsets.only(bottom: 50),
           children: [
-            ArrowBackBtn(),
-            Container(
-              height: 250,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/rekolayzer.jpg"),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(top: 60),
-                    child: Text(
-                      "Relax",
-                      style: TextStyle(
-                        fontSize: 80,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontFamily: 'SquarePeg',
+            PageHeader(
+                headerImageUrl: "assets/images/rekolayzer.jpg", text: "Relaxx"),
+            Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.only(topLeft: Radius.circular(6)),
+                        color: Color(0xFF1a2946),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Relax",
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ),
                   ),
-                  Row(
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: InkWell(
-                          onTap: () {},
-                          child: Container(
-                            height: 50,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(6)),
-                              color: Color(0xFF1a2946),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Relax",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
+                ),
+                Container(
+                  width: 2,
+                  height: 50,
+                  color: Colors.black.withOpacity(.7),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.only(topRight: Radius.circular(6)),
+                        color: Color(0xFF1a2946),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Favourite",
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white),
                         ),
                       ),
-                      Container(
-                        width: 2,
-                        height: 50,
-                        color: Colors.black.withOpacity(.7),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: InkWell(
-                          onTap: () {},
-                          child: Container(
-                            height: 50,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(6)),
-                              color: Color(0xFF1a2946),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Favourite",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             storyContainer("Barley.jpg", "chicks.jpg", "flute.jpg", "Barley",
                 "Chicks", "Flute"),
