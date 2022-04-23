@@ -54,7 +54,8 @@ class PolicyPage extends StatelessWidget {
                     "Privacy & Policy",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 28,color: Color.fromARGB(255, 9, 9, 9),
+                      fontSize: 28,
+                      color: Color.fromARGB(255, 9, 9, 9),
                     ),
                   ),
                   Padding(
@@ -81,9 +82,9 @@ class PolicyPage extends StatelessWidget {
           Container(
             height: 600,
             width: double.infinity,
-            
             child: Column(
               children: [
+                //eklendi
                 Align(
                   alignment: Alignment.topLeft,
                   child: Padding(
@@ -100,7 +101,8 @@ class PolicyPage extends StatelessWidget {
                   child: Text(
                     "By visiting and/or taking any action on our template, you confirm that you are in agreement with and bound by the terms outlined below.These terms apply to the website,emails,or any other communication.",
                     style: TextStyle(
-                        fontSize: 20, color: Color.fromARGB(255, 134, 124, 124)),
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 134, 124, 124)),
                   ),
                 ),
                 Align(
@@ -193,7 +195,6 @@ class PolicyPage extends StatelessWidget {
           Container(
             height: 200,
             width: double.infinity,
-            
             child: Column(
               children: [
                 Padding(
@@ -211,10 +212,11 @@ class PolicyPage extends StatelessWidget {
                   padding: const EdgeInsets.all(14.0),
                   child: Align(
                     alignment: Alignment.topLeft,
-                    child: Text("By visiting and/or taking any action on  our template, you confirm that you are in agreement with and bound by the terms outlined below.These terms apply to the website, emails, or any other communication. ",
-                    style: TextStyle(
-                                fontSize: 17,
-                                color: Color.fromARGB(255, 134, 124, 124)),
+                    child: Text(
+                      "By visiting and/or taking any action on  our template, you confirm that you are in agreement with and bound by the terms outlined below.These terms apply to the website, emails, or any other communication. ",
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Color.fromARGB(255, 134, 124, 124)),
                     ),
                   ),
                 ),
