@@ -36,6 +36,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/deep_om_chant.jpg",
                     text: "Healing Meditation Music",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -46,6 +47,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/meditation_chant.jpg",
                     text: "Grow Healing Meditation",
                     time: "7 Min 17 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -56,6 +58,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/upbeat_healing.jpg",
                     text: "Upbeat Healing",
                     time: "4 Min 32 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -66,6 +69,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/concert.jpg",
                     text: "Healing Music Orient",
                     time: "5 Min 00 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -76,6 +80,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "6 Min 10 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -86,6 +91,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/human_in_lake.jpg",
                     text: "Healing Meditation Peace",
                     time: "10 Min 3 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -96,6 +102,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/meditation1.jpg",
                     text: "Meditation For Healing",
                     time: "5 Min 3 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -106,6 +113,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/sound_of_healing.jpg",
                     text: "Sound Of Healing",
                     time: "8 Min 49 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -116,6 +124,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/healing_sound_music.jpg",
                     text: "Healing Sound Music",
                     time: "4 Min 5 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -126,6 +135,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/aura.jpg",
                     text: "Aura Healing Music",
                     time: "5 Min 36 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -136,6 +146,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/time_for_healing.jpg",
                     text: "Time for Healing",
                     time: "0 Min 0 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -146,6 +157,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/relax_healing.jpg",
                     text: "Relax Healing",
                     time: "3 Min 13 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -156,6 +168,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/healing_music.jpg",
                     text: "Healing Music",
                     time: "6 Min 7 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -166,6 +179,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/calm_healing_music.jpg",
                     text: "Calm Healing Music",
                     time: "5 Min 59 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -176,6 +190,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -186,6 +201,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -196,6 +212,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -206,6 +223,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -216,6 +234,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -226,6 +245,7 @@ class _MeditationItems4State extends State<MeditationItems4> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Healing Meditation",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
               ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/baseClass.dart';
+import 'package:sleep_soundss/components/MusicItemsPage2.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
 import 'package:sleep_soundss/freePage.dart';
 import 'package:sleep_soundss/meditationItems4.dart';
@@ -92,6 +93,7 @@ Widget MeditationContainer(
     required Widget widget}) {
   return GestureDetector(
     onTap: () {
+      
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return widget;
       }));

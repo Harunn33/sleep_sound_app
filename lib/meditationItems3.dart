@@ -36,6 +36,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/nepal_chant.jpg",
                     text: "Nepal Chant",
                     time: "4 Min 26 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -46,6 +47,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/relax_chant.jpg",
                     text: "Relax Chant Music",
                     time: "2 Min 16 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -56,6 +58,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/meditation_om_chant.jpg",
                     text: "Meditation Om Chant",
                     time: "1 Min 6 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -66,6 +69,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/super_energy_chant.jpg",
                     text: "Super Energy Chant",
                     time: "2 Min 58 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -76,6 +80,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/deep_om_chant.jpg",
                     text: "Depp Om Chant",
                     time: "6 Min 01 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -86,6 +91,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/peaceful_chant.jpg",
                     text: "Peaceful Chant Music",
                     time: "4 Min 38 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -96,6 +102,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/mystic_india_chant.jpg",
                     text: "Mystic India Chant",
                     time: "1 Min 23 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -106,6 +113,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/meditation_chant.jpg",
                     text: "Meditation Chant",
                     time: "2 Min 11 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -116,6 +124,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/super_chant.jpg",
                     text: "Super Chant",
                     time: "5 Min 35 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -126,6 +135,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/chakra_meditation.jpg",
                     text: "Chakra Meditation",
                     time: "2 Min 11 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -136,6 +146,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/natural_chant.jpg",
                     text: "Natural Chant",
                     time: "2 Min 25 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -146,6 +157,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/chants_music.jpg",
                     text: "Chants Music",
                     time: "3 Min 00 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -156,6 +168,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/bell_chant.jpg",
                     text: "Relaxation Bell Chant",
                     time: "4 Min 21 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -166,6 +179,7 @@ class _MeditationItems3State extends State<MeditationItems3> {
                     imageUrl: "assets/images/relax_chant.jpg",
                     text: "Chants Music for Relax",
                     time: "2 Min 45 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
               ],

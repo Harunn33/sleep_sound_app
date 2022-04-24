@@ -40,6 +40,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_2.jpg",
                     text: "Sleeping Baby",
                     time: "3 Min 6 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -50,6 +51,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_3.jpg",
                     text: "Baby Sleeping Music",
                     time: "3 Min 23 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -60,6 +62,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_4.jpg",
                     text: "Hush Baby Music",
                     time: "2 Min 33 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -70,6 +73,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_5.jpg",
                     text: "Lullaby Baby",
                     time: "5 Min 3 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -80,6 +84,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_6.jpg",
                     text: "Little Baby Sleep",
                     time: "4 Min 58 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -90,6 +95,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_7.jpg",
                     text: "Magical Baby Music",
                     time: "6 Min 0 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -100,6 +106,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_8.jpg",
                     text: "Classical Baby Music",
                     time: "5 Min 40 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -110,6 +117,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                     imageUrl: "assets/images/sleep_baby_9.jpg",
                     text: "Sleepy Music Baby",
                     time: "10 Min 15 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
               ],

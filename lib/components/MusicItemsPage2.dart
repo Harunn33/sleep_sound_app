@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sleep_soundss/components/arrowBackBtn.dart';
-import 'package:sleep_soundss/classDraweMenu/meditationManager.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MusicItemsPage2 extends StatefulWidget {
   String imageUrl;
   String text;
   String time;
-
+  String musicFilePath;
   MusicItemsPage2({
     Key? key,
     required this.imageUrl,
     required this.text,
     required this.time,
+    required this.musicFilePath
   }) : super(key: key);
+  
 
   @override
   State<MusicItemsPage2> createState() => _MusicItemsPage2State();
@@ -22,6 +24,20 @@ class MusicItemsPage2 extends StatefulWidget {
 class _MusicItemsPage2State extends State<MusicItemsPage2> {
   IconData favorite = Icons.favorite_border_rounded;
   IconData playPause = Icons.play_circle_rounded;
+  AudioCache cache = AudioCache(); // you have this
+  AudioPlayer player = AudioPlayer(); 
+   
+  void _playFile() async{
+  // create this
+
+  player = await cache.play(widget.musicFilePath); // assign player here
+}
+void _stopFile() {
+  player.stop(); // stop the file like this
+}
+  
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -106,11 +122,15 @@ class _MusicItemsPage2State extends State<MusicItemsPage2> {
                             ),
                             IconButton(
                               onPressed: () {
-                                setState(() {
+                                setState(()  {
                                   if (playPause == Icons.play_circle_rounded) {
                                     playPause = Icons.pause_circle_rounded;
+                                    _playFile();
+                                    
                                   } else {
                                     playPause = Icons.play_circle_rounded;
+                                    _stopFile();
+                                    
                                   }
                                 });
                               },

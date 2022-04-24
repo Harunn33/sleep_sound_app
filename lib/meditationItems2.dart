@@ -66,6 +66,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain1.jpg",
                     text: "Alpha Brain Waves",
                     time: "3 Min 6 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -76,6 +77,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain2.jpg",
                     text: "Brain Wave Alpha",
                     time: "3 Min 23 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -86,6 +88,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain3.jpg",
                     text: "Meditation in Alpha Waves",
                     time: "2 Min 33 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -96,6 +99,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain4.jpg",
                     text: "Brain Wave Meditation",
                     time: "5 Min 3 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -106,6 +110,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain5.jpg",
                     text: "Alpha Wave Meditation",
                     time: "4 Min 58 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -116,6 +121,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain6.jpg",
                     text: "Brain Wave Beta Music",
                     time: "6 Min 0 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -126,6 +132,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain7.jpg",
                     text: "Beta Brain Wave Music",
                     time: "5 Min 40 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
                 MeditationManager(
@@ -136,6 +143,7 @@ class _MeditationItems2State extends State<MeditationItems2> {
                     imageUrl: "assets/images/brain8.jpg",
                     text: "Binaural Beta Waves",
                     time: "10 Min 15 Sec",
+                    musicFilePath: "music.mp3",
                   ),
                 ),
               ],
