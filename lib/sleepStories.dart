@@ -149,7 +149,12 @@ class _MainPage2State extends State<MainPage2> {
                     widget: MusicItemsPage(
                         imageUrl: "assets/images/butterfly.jpg",
                         text: "The Butterfly Nest",
-                        time: "13 Min 1 Sec"),
+                        time: "13 Min 1 Sec",
+                        musicFilePath: "music.mp3",
+                        ),
+
+                        
+                        
                     context: context),
                 sleepStoriesContainer(
                     imageUrl: "assets/images/rabbit.jpg",
@@ -159,6 +164,7 @@ class _MainPage2State extends State<MainPage2> {
                       imageUrl: "assets/images/rabbit.jpg",
                       text: "The Velveteen Rabbit",
                       time: "29 Min 37 Sec",
+                      musicFilePath: "music.mp3",
                     ),
                     context: context),
                 sleepStoriesContainer(
@@ -169,6 +175,7 @@ class _MainPage2State extends State<MainPage2> {
                       imageUrl: "assets/images/lost.jpg",
                       text: "Searching For A Lost",
                       time: "22 Min 13 Sec",
+                      musicFilePath: "music.mp3",
                     ),
                     context: context),
                 sleepStoriesContainer(
@@ -179,6 +186,7 @@ class _MainPage2State extends State<MainPage2> {
                       imageUrl: "assets/images/bees.jpg",
                       text: "There Be Bees",
                       time: "18 Min 40 Sec",
+                      musicFilePath: "music.mp3",
                     ),
                     context: context),
                 sleepStoriesContainer(
@@ -189,6 +197,7 @@ class _MainPage2State extends State<MainPage2> {
                       imageUrl: "assets/images/dreamChronicles.jpg",
                       text: "Dream Chronicles",
                       time: "16 Min 58 Sec",
+                      musicFilePath: "music.mp3",
                     ),
                     context: context),
                 sleepStoriesContainer(
@@ -199,6 +208,7 @@ class _MainPage2State extends State<MainPage2> {
                       imageUrl: "assets/images/forest.jpg",
                       text: "The Bundle In The Forest",
                       time: "15 Min 50 Sec",
+                      musicFilePath: "music.mp3",
                     ),
                     context: context),
               ],
