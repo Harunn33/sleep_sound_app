@@ -39,7 +39,7 @@ class _MeditationsItemsPageState extends State<MeditationsItemsPage> {
                   managerWidget: MusicItemsPage2(
                     imageUrl: "assets/images/sleep_baby_2.jpg",
                     text: "Sleeping Baby",
-                    time: "3 Min 6 Sec",
+                    time: "3 Min 7 Sec",
                     musicFilePath: "music.mp3",
                   ),
                 ),
